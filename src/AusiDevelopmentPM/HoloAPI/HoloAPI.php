@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * @author AusiPlayz
+ * @org AusiDevelopmentPM
+ */
+
 declare(strict_types=1);
 
 namespace AusiDevelopmentPM\HoloAPI;
