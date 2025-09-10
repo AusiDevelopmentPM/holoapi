@@ -13,8 +13,10 @@ namespace AusiDevelopmentPM\HoloAPI;
 use AusiDevelopmentPM\HoloAPI\entity\HoloEntity;
 use AusiDevelopmentPM\HoloAPI\tasks\UpdateHoloTask;
 
+use pocketmine\math\Vector3;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
+use pocketmine\world\World;
 
 class HoloAPI extends PluginBase {
 
@@ -40,9 +42,11 @@ class HoloAPI extends PluginBase {
         unset($this->holos[$name]);
     }
 
-    public function addHolo(string $name): void
+    public function addHolo(string $name, Vector3 $pos, World $world): HoloEntity
     {
-        $holo = new HoloEntity();
+        $holo = new HoloEntity($pos, $world);
+        $this->holos[$name] = $holo;
+        return $holo;
     }
 
 }
