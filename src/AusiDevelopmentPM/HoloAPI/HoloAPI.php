@@ -29,4 +29,14 @@ class HoloAPI extends PluginBase {
 
     }
 
+    public function getHolos(): array
+    {
+        return $this->holos;
+    }
+
+    public function removeHolo(string $name): void
+    {
+        unset($this->holos[$name]);
+    }
+
 }
