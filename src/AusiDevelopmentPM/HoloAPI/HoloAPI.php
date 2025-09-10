@@ -17,6 +17,9 @@ class HoloAPI extends PluginBase {
 
     use SingletonTrait;
 
+    /** @var array */
+    public array $holos = [];
+
     public function onEnable() :void {
         self::setInstance($this);
     }
