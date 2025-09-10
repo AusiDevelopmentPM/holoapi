@@ -10,6 +10,8 @@ declare(strict_types=1);
 
 namespace AusiDevelopmentPM\HoloAPI;
 
+use AusiDevelopmentPM\HoloAPI\tasks\UpdateHoloTask;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
 
@@ -22,6 +24,9 @@ class HoloAPI extends PluginBase {
 
     public function onEnable() :void {
         self::setInstance($this);
+
+        $this->getScheduler()->scheduleRepeatingTask(new UpdateHoloTask($this), 10);
+
     }
 
 }
