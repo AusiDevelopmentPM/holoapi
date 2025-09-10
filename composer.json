@@ -1,0 +1,9 @@
+{
+  "require": {
+    "pocketmine/pocketmine-mp": "5.33.1"
+  },
+  "scripts": {
+    "install": "composer install --ignore-platform-reqs",
+    "phar": "php build.php"
+  }
+}
