@@ -39,4 +39,9 @@ class HoloAPI extends PluginBase {
         unset($this->holos[$name]);
     }
 
+    public function addHolo(string $name): void
+    {
+        $holo =
+    }
+
 }
