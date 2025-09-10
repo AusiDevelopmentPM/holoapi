@@ -1,2 +1,4 @@
 # holoapi
 
+## License
+[read](LICENSE)
