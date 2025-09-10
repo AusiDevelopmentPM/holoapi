@@ -8,6 +8,6 @@ use pocketmine\scheduler\Task;
 
 class HoloEntity {
 
-    
+
 
 }

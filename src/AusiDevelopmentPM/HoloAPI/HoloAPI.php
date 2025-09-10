@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 namespace AusiDevelopmentPM\HoloAPI;
 
+use AusiDevelopmentPM\HoloAPI\entity\HoloEntity;
 use AusiDevelopmentPM\HoloAPI\tasks\UpdateHoloTask;
 
 use pocketmine\plugin\PluginBase;
@@ -41,7 +42,7 @@ class HoloAPI extends PluginBase {
 
     public function addHolo(string $name): void
     {
-        $holo =
+        $holo = new HoloEntity();
     }
 
 }
