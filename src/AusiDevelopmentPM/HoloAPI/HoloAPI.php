@@ -49,4 +49,10 @@ class HoloAPI extends PluginBase {
         return $holo;
     }
 
+    public function getHoloByName(string $name): ?HoloEntity
+    {
+        $holos = $this->getHolos();
+        return $holos[$name] ?? null;
+    }
+
 }
