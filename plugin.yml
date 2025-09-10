@@ -1,0 +1,7 @@
+name: HoloAPI
+version: 1.0.0
+author: AusiDevelopmentPM
+authors:
+  - AusiPlayz
+
+api: [4.0.0, 5.0.0]
